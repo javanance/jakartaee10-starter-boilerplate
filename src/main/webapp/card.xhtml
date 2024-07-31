@@ -1,0 +1,27 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="jakarta.faces.facelets"
+                xmlns:f="jakarta.faces.core"
+                xmlns:h="jakarta.faces.html"
+                xmlns:jsf="jakarta.faces"
+                 xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/layout/template.xhtml">
+    <ui:define name="metadata">
+        <f:metadata>
+            <f:viewAction action="#{todoList.init()}"/>
+        </f:metadata>
+    </ui:define>
+    <ui:define name="pageTitle"> TODO LIST</ui:define>
+    <ui:define name="content">
+       	<p:card style="width: 25rem; margin-bottom: 2em">
+            <f:facet name="title">
+                Simple Card
+            </f:facet>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+
+        </p:card>
+        <p> aaa </p>
+        <p> bbbaaaa </p>
+    </ui:define>
+</ui:composition>
