@@ -1,7 +1,6 @@
 package com.example.cdi;
 
 import com.example.domain.Todo;
-import com.example.domain.Todo_;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -65,8 +64,8 @@ public class CdiTodoRepository implements CrudRepository<Todo, UUID> {
         // set predicates
         // query.set(root.get("completed"), false)
         //        .where(cb.equal(root.get("id"), id), cb.equal(root.get("completed"), true));
-        query.set(root.get(Todo_.completed), false)
-                .where(cb.equal(root.get(Todo_.id), id), cb.equal(root.get(Todo_.completed), true));
+//        query.set(root.get(Todo_.completed), false)
+//                .where(cb.equal(root.get(Todo_.id), id), cb.equal(root.get(Todo_.completed), true));
 
         // perform query
         this.entityManager.createQuery(query).executeUpdate();
