@@ -3,7 +3,8 @@
                 xmlns:f="jakarta.faces.core"
                 xmlns:h="jakarta.faces.html"
                 xmlns:jsf="jakarta.faces"
-                template="/WEB-INF/layout/template.xhtml">
+                  xmlns:p="http://primefaces.org/ui"
+                template="/layout/template.xhtml">
     <ui:define name="metadata">
         <f:metadata>
             <f:viewAction action="#{todoList.init()}"/>
@@ -64,5 +65,6 @@
         </h:form>
         <p> aaa </p>
         <p> bbbaaaa </p>
+        <p:button outcome="test" value="Navigate"/> 
     </ui:define>
 </ui:composition>

@@ -1,18 +1,34 @@
 @CHARSET "UTF-8";
 
+:root {
+  --rightpanel-size: 300px;
+  --topbar-height: 60px;
+  --menubar-height: 32px;
+  --layout-main-padding: 92px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+}
+	
 main > .container {
     padding: 60px 15px 0;
 }
 
 footer {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     background-color: #f5f5f5;
+    
 }
 
-.footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
-}
+
 
 h1.page-header{
     margin: 20px 5px;
@@ -21,4 +37,98 @@ h1.page-header{
 .completed {
     color: gray;
     text-decoration: line-through;
+}
+
+.mycontainer {
+	display: grid;
+	grid-template-columns: minmax(10rem, 300px) 1fr minmax(10rem, 200px);
+	grid-template-rows: auto 2fr 1fr auto;
+	grid-template-areas:
+		"logo header header"
+		"nav main aside"
+		"nav main ads"
+		"footer footer footer" ;
+		
+	min-height :  100vh;
+}
+
+.logo {
+	grid-area : logo;
+	/* background-color: red; */
+	
+  	padding: 12.5px 20px 12.5px 20px;
+  	
+  	height: var(--topbar-height);
+  	width: 300px;
+  	background-color: #0277BD;
+  /* 	float: left; */
+  	box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  
+}
+.logo-image{
+	display: inline-block;
+  	vertical-align: middle;
+  	width: 200px;
+  	height: 30px;
+  	background: url("#{resource['ultima-layout:images/logo.png']}") no-repeat;
+}
+
+.ads{
+	grid-area : ads;
+	background: grey;
+}
+
+header {
+	grid-area: header;
+	background-color: yellowgreen;
+}
+
+nav {
+	grid-area: nav;
+	background-color: greeen;
+}
+
+main {
+	grid-area: main;
+	background-color: orange;
+	
+}
+
+aside {
+	grid-area: aside;
+	background-color: yellow;
+}
+
+footer {
+	grid-area: footer;
+	background-color: bluegray;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+@media (max-width :1024px) {
+	.mycontainer {
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto minmax(5rem, auto) 1fr minmax(5rem, auto) auto;
+	grid-template-areas:
+		"logo "
+		"nav"
+		"main"
+		"aside"
+		"footer" ;
+	min-height :  100vh;
+	}
+	header {
+		display: none;
+	}	
+	.ads {
+		display: none;
+	}
 }

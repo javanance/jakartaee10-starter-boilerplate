@@ -8,14 +8,19 @@
         <properties>
             <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
 
-            <!-- for  Glassfish/Payara/EclipseLink -->
-            <property name="eclipselink.logging.level.sql" value="FINE"/>
-            <property name="eclipselink.logging.level" value="FINE"/>
-            <property name="eclipselink.logging.parameters" value="true"/>
-
-            <!-- for WildFly/Hibernate -->
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
         </properties>
     </persistence-unit>
+    <!-- <persistence-unit name="gkics" transaction-type="JTA">
+		<jta-data-source>java:/ARZORDS</jta-data-source>
+		<properties>
+			<property name="hibernate.physical_naming_strategy"	value="com.gof.infra.PhysicalNamingStrategyImpl" />
+			<property name="hibernate.physical_naming_strategy"	value="com.gof.infra.GkicsNamingStrategy" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect" />
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect" />
+		</properties>
+	</persistence-unit> -->
+	
 </persistence>

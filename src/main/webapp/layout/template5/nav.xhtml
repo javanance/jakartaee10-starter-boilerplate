@@ -1,0 +1,60 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+	
+<nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()">
+      		<i class="pi pi-times"></i>
+      </li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+    
+    <ul>
+      <li class="menu-button" onclick="showSidebar()"> 
+      	<i class="pi pi-bars" style="font-size: 1.5rem" />
+      </li>
+      <li><a href="#">GoF</a></li>
+      <li class="hideOnMobile"><a href="#">Blog</a></li>
+      <li class="hideOnMobile"><a href="#">Products</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Forum</a></li>
+      <li class="hideOnMobile"><a href="#">Login</a></li>
+      
+      <li class="menu-button-right" onclick="showRightSidebar()"> 
+      	<i class="pi pi-ellipsis-v" style="font-size: 1.5rem" />
+      </li>
+      
+    </ul>
+    
+    <ul class="right-sidebar">
+      <li onclick="hideRightSidebar()">
+      		<i class="pi pi-times"></i>
+      </li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+ </nav>
+
+  <!-- <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script> -->
+
+</ui:composition>

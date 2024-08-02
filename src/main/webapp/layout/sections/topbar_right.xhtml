@@ -1,0 +1,53 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+  
+     <div class="layout-topbar-right">
+         <div class="layout-topbar-actions-left">
+             <p:megaMenu orientation="horizontal" autoDisplay="false" styleClass="layout-megamenu">
+                 <p:submenu label="UI KIT">
+                     <p:column>
+                         <p:submenu label="UI KIT 1">
+                             <p:menuitem value="Form Layout" icon="pi pi-fw pi-id-card" url="/ultima/uikit/formlayout.xhtml" />
+                             <p:menuitem value="Input" icon="pi pi-fw pi-check-square" url="/ultima/uikit/input.xhtml" />
+                             <p:menuitem value="Float Label" icon="pi pi-fw pi-bookmark" url="/ultima/uikit/floatlabel.xhtml" />
+                             <p:menuitem value="Button" icon="pi pi-fw pi-mobile" url="/ultima/uikit/buttons.xhtml" />
+                             <p:menuitem value="File" icon="pi pi-fw pi-file" url="/ultima/uikit/file.xhtml" />
+                         </p:submenu>
+                     </p:column>
+                     <p:column>
+                         <p:submenu label="UI KIT 2">
+                             <p:menuitem value="Table" icon="pi pi-fw pi-table" url="/ultima/uikit/table.xhtml" />
+                             <p:menuitem value="List" icon="pi pi-fw pi-list" url="/ultima/uikit/list.xhtml" />
+                             <p:menuitem value="Tree" icon="pi pi-fw pi-share-alt" url="/ultima/uikit/tree.xhtml" />
+                             <p:menuitem value="Panel" icon="pi pi-fw pi-tablet" url="/ultima/uikit/panels.xhtml" />
+                             <p:menuitem value="Chart" icon="pi pi-fw pi-chart-bar" url="/ultima/uikit/charts.xhtml" />
+                         </p:submenu>
+                     </p:column>
+                     <p:column>
+                         <p:submenu label="UI KIT 3">
+                             <p:menuitem value="Overlay" icon="pi pi-fw pi-clone" url="/ultima/uikit/overlays.xhtml" />
+                             <p:menuitem value="Media" icon="pi pi-fw pi-image" url="/ultima/uikit/media.xhtml" />
+                             <p:menuitem value="Menu" icon="pi pi-fw pi-bars" url="/ultima/uikit/menus.xhtml" />
+                             <p:menuitem value="Message" icon="pi pi-fw pi-comment" url="/ultima/uikit/messages.xhtml" />
+                             <p:menuitem value="Misc" icon="pi pi-fw pi-circle-off" url="/ultima/uikit/misc.xhtml" />
+                         </p:submenu>
+                     </p:column>
+                 </p:submenu>
+                 <p:submenu label="UTILITIES">
+                     <p:column>
+                         <p:submenu label="UTILITIES 1">
+                             <p:menuitem value="Icons" icon="pi pi-fw pi-prime" url="/ultima/utilities/icons.xhtml" />
+                             <p:menuitem value="PrimeFlex" icon="pi pi-fw pi-desktop" url="https://www.primefaces.org/primeflex" />
+                         </p:submenu>
+                     </p:column>
+                 </p:submenu>
+             </p:megaMenu>
+         </div>
+     </div>
+</ui:composition>
