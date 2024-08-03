@@ -4833,10 +4833,12 @@ body .ui-breadcrumb .ui-breadcrumb-items li:last-child .ui-menuitem-link .ui-men
 }
 
 body .ui-menu {
-  padding: 0.5rem 0;
+/* padding: 0.5rem 0; */
+/*   border: 1px solid #e5e5e5;  */ 		
   background: #ffffff;
-  border: 1px solid #e5e5e5;
   border-radius: 4px;
+  /* arazor */
+  padding: 0; 
 }
 body .ui-menu.ui-shadow {
   border: 0 none;
@@ -4918,7 +4920,9 @@ body .ui-menu .ui-menu-list .ui-menuitem .ui-menuitem-link.ui-state-hover .ui-ic
   color: rgba(0, 0, 0, 0.6);
 }
 body .ui-menu .ui-menu-list .ui-menuitem .ui-menuitem-link.ui-state-hover .ui-menuitem-text {
-  color: rgba(0, 0, 0, 0.87);
+  /* color: rgba(0, 0, 0, 0.87); */
+  /* arazor */
+  color : white;
 }
 body .ui-menu .ui-menu-list .ui-menuitem .ui-menuitem-link .ui-menuitem-icon {
   margin-right: 0.5rem;
@@ -4990,7 +4994,8 @@ body .ui-menu .ui-menu-list .ui-separator {
   border-top: 1px solid #e5e5e5;
 }
 body .ui-menu.ui-menubar {
-  padding: 1rem;
+  /* arazor */
+/*   padding: 1rem; */
   background: transparent;
   border-radius: 4px;
 }
